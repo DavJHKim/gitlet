@@ -1,0 +1,18 @@
+# Gitlet
+
+This is a working recreation of the popular version control platform Github in Java. This recreation of the software can be used
+by compiling all the java files and running the commands through the "Main.java" file.
+
+Example in terminal
+- javac *.java
+- java gitlet.Main init
+- java gitlet.Main status
+
+This file contains Git commands including "init", "add", "checkout", "log", "commit", "status", "rm", "global-log", "find",
+"reset", "branch", and "rm-branch".
+
+There are also test files and example files that can be utilized to be utilized as desired.
+
+This directory contains a skeleton for CS61B Project and all rights and patents are reserved for the
+University of California, Berkeley.
+
