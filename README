@@ -1,18 +1,40 @@
-# Gitlet
+# Gitlet: A Git-Inspired Version Control System
 
-This is a working recreation of the popular version control platform Github in Java. This recreation of the software can be used
-by compiling all the java files and running the commands through the "Main.java" file.
+This project is a functional reimplementation of core Git version control features, built entirely in Java. 
+Developed as part of UC Berkeley's CS61B: Data Structures and Programming Methodology course, **Gitlet** replicates key Git operations such as `init`, `add`, `commit`, `checkout`, and `merge`.
 
-Example in terminal
-- javac *.java
-- java gitlet.Main init
-- java gitlet.Main status
+---
 
-This file contains Git commands including "init", "add", "checkout", "log", "commit", "status", "rm", "global-log", "find",
-"reset", "branch", and "rm-branch".
+## 🚀 Features
 
-There are also test files and example files that can be utilized to be utilized as desired.
+Gitlet supports the following commands:
 
-This directory contains a skeleton for CS61B Project and all rights and patents are reserved for the
-University of California, Berkeley.
+- `init`: Initialize a new Gitlet version-control system
+- `add [file]`: Stage a file for the next commit
+- `commit [message]`: Save a snapshot of staged files
+- `checkout`: Restore files or switch branches
+- `log`, `global-log`: Display commit history
+- `rm [file]`: Remove a file from the staging area
+- `find [message]`: Search for commits by message
+- `status`: Show current branch and staged files
+- `branch`, `rm-branch`: Create or remove branches
+- `reset [commit-id]`: Reset working directory to a specific commit
+- `merge [branch]`: Merge a branch into the current one
 
+---
+
+## 🧪 Example Usage
+
+```bash
+# Compile the project
+javac *.java
+
+# Initialize the repository
+java gitlet.Main init
+
+# Add and commit files
+java gitlet.Main add file.txt
+java gitlet.Main commit "Initial commit"
+
+# View status
+java gitlet.Main status
